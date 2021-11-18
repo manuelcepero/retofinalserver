@@ -1,0 +1,15 @@
+## YAML Template.
+server:
+    port: 8888
+
+spring:
+    application:
+        name: myvalue
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/manuelcepero/retofinalserver
+                    default-label: main
+                    search-paths:
+                    - '*service'
